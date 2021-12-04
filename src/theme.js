@@ -1,14 +1,25 @@
-// theme.js
-export default {
+import { extendTheme } from "@chakra-ui/react"
+
+//unused by now, override unneeded
+const theme = extendTheme({
     colors: {
         transparent: 'transparent',
         black: '#000',
         white: '#fff',
-        gray: {
-            50: '#f7fafc',
-            // ...
-            900: '#171923',
-        },
+        teal: {
+            50: '#E6FFFA',
+            100: '#B2F5EA',
+            200: '#81E6D9',
+            300: '#4FD1C5',
+            400: '#38B2AC',
+            500: '#319795',
+            600: '#2C7A7B',
+            700: '#285E61',
+            800: '#234E52',
+            900: '#1D4044'
+        }
         // ...
     },
-}
+})
+
+export default theme;

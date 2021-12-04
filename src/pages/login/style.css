@@ -1,0 +1,7 @@
+.login__frame{
+    border-bottom-left-radius: 30px;
+}
+.login__form{
+    display: grid;
+    place-content: center;
+}

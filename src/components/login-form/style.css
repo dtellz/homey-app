@@ -1,0 +1,16 @@
+.login-form__element{
+    padding-top: 2rem;
+}
+.login-form__password-reset{
+    cursor: pointer;
+}
+.login-form__sign-up{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.login-form__sign-up-link{
+    cursor: pointer;
+    color: #4FD1C5;
+    font-weight: bolder;
+}
