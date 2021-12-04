@@ -1,0 +1,19 @@
+.header__main-container{
+    position: absolute;
+    width: 60vw;
+    z-index: 1;
+    background-color: white;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    bottom: 89vh;
+    left: 20vw;
+    box-shadow: -1px 4px 10px -6px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+}
+.header__logo{
+    height: 22px;
+}

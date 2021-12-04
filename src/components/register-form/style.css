@@ -15,3 +15,16 @@
     color: #4FD1C5;
     font-weight: bolder;
 }
+.register-form__main-container{
+    position: absolute;
+    width: 450px;
+    height: 70vh;
+    z-index: 1;
+    background-color: white;
+    display: grid;
+    place-content: center;
+    bottom: 10vh;
+    left: 35vw;
+    box-shadow: -1px 4px 10px -6px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+}

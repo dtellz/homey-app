@@ -17,12 +17,12 @@ import users from '../../database/users.json'
 import './style.css'
 
 
-const LoginForm = () => {
+const RegisterForm = () => {
 
     const navigate = useNavigate();
     const [isRemembered, setIsRemembered] = useState(false); // this variable will be used to remember user on login setting the session token on localStorage instead of sessionStorage.
     const [isErrored, setIsErrored] = useState(false);
-    const validateUser = (email, pass) => {
+    const userAlreadyExists = (email, pass) => {
         return users.find(e => e.email === email && e.password === pass)
     }
 
@@ -32,7 +32,7 @@ const LoginForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (validateUser(e.target.email.value, e.target.password.value)) {
+        if (userAlreadyExists(e.target.email.value, e.target.password.value)) {
             isRemembered ? localStorage.setItem('session_token', 'asda') : sessionStorage.setItem('session_token', 'userSessionIsValidatedAndThisIsNotARealToken');
             navigate('/dashboard')
         } else {
@@ -46,7 +46,7 @@ const LoginForm = () => {
 
 
     return (
-        <Fragment>
+        <div className='register-form__main-container'>
             <form onSubmit={handleSubmit}>
                 <Text fontSize='32px' fontWeight='700' color='teal.300'>Welcome Back</Text>
                 <Text fontSize='14px' fontWeight='700'>Enter your email and password to sign in.</Text>
@@ -90,10 +90,10 @@ const LoginForm = () => {
             </Alert> : <div></div>}
 
 
-        </Fragment>
+        </div>
 
     )
 
 }
 
-export default LoginForm;
+export default RegisterForm;
