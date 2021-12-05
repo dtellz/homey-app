@@ -4,15 +4,11 @@ import {
     Input,
     Button,
     Switch,
-    Alert,
-    AlertIcon,
-    CloseButton
+
 } from '@chakra-ui/react'
 import { Text } from '@chakra-ui/react'
 import { useNavigate } from 'react-router'
-import { Fragment, useState } from 'react'
-
-import users from '../../database/users.json'
+import { useState } from 'react'
 
 import './style.css'
 
@@ -21,10 +17,7 @@ const RegisterForm = () => {
 
     const navigate = useNavigate();
     const [isRemembered, setIsRemembered] = useState(false); // this variable will be used to remember user on login setting the session token on localStorage instead of sessionStorage.
-    const [isErrored, setIsErrored] = useState(false);
-    const userAlreadyExists = (email, pass) => {
-        return users.find(e => e.email === email && e.password === pass)
-    }
+
 
     const handleSwitch = () => {
         isRemembered ? setIsRemembered(false) : setIsRemembered(true);
@@ -32,24 +25,24 @@ const RegisterForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (userAlreadyExists(e.target.email.value, e.target.password.value)) {
-            isRemembered ? localStorage.setItem('session_token', 'asda') : sessionStorage.setItem('session_token', 'userSessionIsValidatedAndThisIsNotARealToken');
-            navigate('/dashboard')
-        } else {
-            setIsErrored(true)
-        }
+        console.log('This is just a fake register form ;p, at this version if you want to register a new user you need to hardcode it on database/users.json');
+        navigate('/login')
     }
-    const handleAlertClose = () => {
-        setIsErrored(false)
-    }
+
 
 
 
     return (
         <div className='register-form__main-container'>
-            <form onSubmit={handleSubmit}>
-                <Text fontSize='32px' fontWeight='700' color='teal.300'>Welcome Back</Text>
-                <Text fontSize='14px' fontWeight='700'>Enter your email and password to sign in.</Text>
+            <form onSubmit={handleSubmit} className='register-form__form'>
+
+                <Text textAlign='center' fontSize='18px' fontWeight='700' color='gray.700'>Sign up for a free account</Text>
+
+                <FormControl className='login-form__element' id='name' isRequired>
+                    <FormLabel fontSize='14px'>Name</FormLabel>
+                    <Input borderRadius='15px' fontSize='14px' type='text' placeholder='Your full name' />
+                </FormControl>
+
 
                 <FormControl className='login-form__element' id='email' isRequired>
                     <FormLabel fontSize='14px'>Email</FormLabel>
@@ -66,7 +59,7 @@ const RegisterForm = () => {
                     <FormLabel fontSize='12px' htmlFor='remember-me' mb='0'>
                         Remember me
                     </FormLabel>
-                    <Text className='login-form__password-reset' onClick={() => navigate('/reset-password')}>Forgot your password?</Text>
+
                 </FormControl>
                 <Button
                     mt={8}
@@ -78,16 +71,11 @@ const RegisterForm = () => {
                     fontSize='10px'
                     fontWeight='700'
                 >
-                    LOG IN
+                    SIGN UP
                 </Button>
 
-                <Text className='login-form__sign-up'>Don't have an account? <span onClick={() => navigate('/register')} className='login-form__sign-up-link'>Sign up</span></Text>
+                <Text className='login-form__sign-up'>Don't have an account? <span onClick={() => navigate('/login')} className='login-form__sign-up-link'> Sign in</span></Text>
             </form>
-            {isErrored ? <Alert status='error'>
-                <AlertIcon />
-                Wrong user/pass
-                <CloseButton position='absolute' right='8px' top='8px' onClick={handleAlertClose} />
-            </Alert> : <div></div>}
 
 
         </div>

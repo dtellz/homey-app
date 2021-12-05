@@ -6,8 +6,15 @@
     place-content: center;
     padding-top: 4rem;
 }
-.test{
-    position: relative;
-    z-index: 1;
-    left:20%;
+
+.register__upper-block{
+    display: grid;
+    place-content: center;
+    padding-bottom: 12rem;
+}
+.register__text-block{
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
