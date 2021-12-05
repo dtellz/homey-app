@@ -8,10 +8,10 @@ import './style.css'
 const MenuOption = (props) => {
 
     let icon = undefined;
+
     let optionSelection = props.active ? 'option active' : 'option';
     let textColor = props.active ? 'gray.700' : 'gray.400';
     let bgColor = props.active ? 'white' : 'gray.100';
-    let iconColor = props.active ? 'white' : 'teal.300'
     let iconBgColor = props.active ? 'teal.300' : 'white'
 
     switch (props.icon) {

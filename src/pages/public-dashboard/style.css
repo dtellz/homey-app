@@ -11,9 +11,9 @@
     
     padding-top: 2rem;
 }
-.iconBackground{
-    display: grid;
-    place-content: center;
+.dashboard__helpbox{
+    padding-top: 1rem;
 }
+
 
 

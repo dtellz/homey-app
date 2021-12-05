@@ -1,17 +1,17 @@
 import { Grid, GridItem } from '@chakra-ui/react'
-import LoginForm from "../../components/login-form";
+import ContactForm from "../../components/contact-form";
 import Footer from "../../components/footer";
 import Header from '../../components/header'
 import './style.css';
 
-const Login = () => {
+const ContactUs = () => {
 
     return (
 
         <Grid h='100vh' templateRows='repeat(6, 1fr)' templateColumns='repeat(7, 1fr)' gap={0}>
 
             <GridItem className='login__form' rowSpan={5} colSpan={4}>
-                <LoginForm />
+                <ContactForm />
             </GridItem>
 
             <GridItem className='login__frame' rowSpan={5} colSpan={3} bg='teal.300' />
@@ -27,4 +27,4 @@ const Login = () => {
     )
 }
 
-export default Login;
+export default ContactUs;

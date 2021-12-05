@@ -1,8 +1,0 @@
-.password__frame{
-    border-bottom-left-radius: 30px;
-}
-.password__form{
-    display: grid;
-    place-content: center;
-    padding-top: 4rem;
-}

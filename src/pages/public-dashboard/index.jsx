@@ -44,8 +44,9 @@ const PublicDashboard = () => {
                     <MenuOption text='Dashboard' icon='home' select={handleOptOne} active={optOne} />
                     <MenuOption text='Transactions overview' icon='bars' select={handleOptTwo} active={optTwo} />
                     <MenuOption text='Settings' icon='tool' select={handleOptThree} active={optThree} />
+
                 </div>
-                <HelpBox />
+                <HelpBox className='dashboard__helpbox' />
             </GridItem>
             <GridItem rowSpan={1} colSpan={4} bg='gray.100' />
             <GridItem rowSpan={1} colSpan={4} bg='gray.100' />
