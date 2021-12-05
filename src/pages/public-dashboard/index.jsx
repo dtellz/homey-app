@@ -5,6 +5,7 @@ import MenuOption from '../../components/menu-option';
 import './style.css'
 import { useState } from 'react';
 import HelpBox from '../../components/help-box';
+import InfoBox from '../../components/info-box';
 
 const PublicDashboard = () => {
     const [optOne, setOptOne] = useState(true);
@@ -48,7 +49,15 @@ const PublicDashboard = () => {
                 </div>
                 <HelpBox className='dashboard__helpbox' />
             </GridItem>
-            <GridItem rowSpan={1} colSpan={4} bg='gray.100' />
+            <GridItem rowSpan={1} colSpan={4} bg='gray.100' >
+                <div className='dashboard__small-info'>
+                    <InfoBox textOne='House expenses' textTwo='$3,000' textThree='+55%' icon='wallet' />
+                    <InfoBox textOne="Today's payments" textTwo='300' textThree='+5%' icon='world' />
+                    <InfoBox textOne='Transaction to download' textTwo='24' textThree='' icon='note' />
+                    <InfoBox textOne='House administrator' textTwo='Esthera Jackson' textThree='' icon='person' />
+                </div>
+
+            </GridItem>
             <GridItem rowSpan={1} colSpan={4} bg='gray.100' />
             <GridItem rowSpan={1} colSpan={4} bg='gray.100' />
         </Grid>

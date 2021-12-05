@@ -1,0 +1,15 @@
+.infobox__maincontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #4FD1C5;
+    cursor: pointer;
+    border-radius: 15px;
+/*     margin: auto; */
+    align-items: center;
+
+}
+.infobox__percentage{
+    color: #48BB78;
+    font-size: 14px;
+}

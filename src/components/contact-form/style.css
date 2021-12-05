@@ -1,0 +1,19 @@
+.contact-form__element{
+    padding-top: 0.5rem;
+}
+
+.contact-form__sign-up-link{
+    cursor: pointer;
+    color: #4FD1C5;
+    font-weight: bolder;
+}
+.contact-form__sign-up{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.contact-form__sign-up-link{
+    cursor: pointer;
+    color: #4FD1C5;
+    font-weight: bolder;
+}

@@ -4,7 +4,7 @@
 .login__form{
     display: grid;
     place-content: center;
-    padding-top: 4rem;
+    padding-top: 5rem;
 }
 /* .test{
     position: relative;
