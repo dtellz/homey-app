@@ -1,4 +1,4 @@
-## Available Scripts
+## LAUNCHING INSTRUCTIONS
 
 In order to launch the UI, you need to clone this repository to a local repository in your computer. Then proceed as follows.
 
