@@ -1,13 +1,8 @@
-.login__frame{
+.password__frame{
     border-bottom-left-radius: 30px;
 }
-.login__form{
+.password__form{
     display: grid;
     place-content: center;
     padding-top: 4rem;
 }
-/* .test{
-    position: relative;
-    z-index: 1;
-    left:20%;
-} */

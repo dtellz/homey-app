@@ -34,7 +34,7 @@ const LoginForm = () => {
         e.preventDefault();
         if (validateUser(e.target.email.value, e.target.password.value)) {
             isRemembered ? localStorage.setItem('session_token', 'asda') : sessionStorage.setItem('session_token', 'userSessionIsValidatedAndThisIsNotARealToken');
-            navigate('/dashboard')
+            navigate('/common-dashboard')
         } else {
             setIsErrored(true)
         }
@@ -66,7 +66,7 @@ const LoginForm = () => {
                     <FormLabel fontSize='12px' htmlFor='remember-me' mb='0'>
                         Remember me
                     </FormLabel>
-                    <Text className='login-form__password-reset' onClick={() => navigate('/reset-password')}>Forgot your password?</Text>
+                    <Text className='login-form__password-reset' onClick={() => navigate('/password-reset')}>Forgot your password?</Text>
                 </FormControl>
                 <Button
                     mt={8}

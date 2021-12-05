@@ -1,36 +1,55 @@
-import homieLogo from '../../assets/homie_app_logo.png'
 import './style.css'
 import { Icon } from '@chakra-ui/react'
-import AccountCircleIcon from '@mui/icons-material/AccountCircle'; //signup
-import PersonIcon from '@mui/icons-material/Person'; //profile
-import VpnKeyIcon from '@mui/icons-material/VpnKey'; // sign in
-import DashboardIcon from '@mui/icons-material/Dashboard'; // dashboard
+import { IoIosCube } from "react-icons/io";
+import { IoPerson, IoPersonCircle, IoKey } from 'react-icons/io5';
+import { HiHome } from "react-icons/hi";
+import { Text } from '@chakra-ui/react'
+import { Button } from '@chakra-ui/button';
+import { useNavigate } from 'react-router';
+import { Link } from "react-router-dom"
+
+
 
 const Header = () => {
+    const navigate = useNavigate();
     return (
         <div className='header__main-container'>
-            <div className='header__element'>
-                <img className='header__logo' src={homieLogo} />
-                <p>Homey App</p>
+            <div className='header__element homelink'>
+                <Icon as={HiHome} />
+                <Link to='/login' className='header__big-link' >Homey App</Link>
             </div>
 
             <div className='header__element'>
                 <div className='header__element'>
-                    <img className='header__element' src={homieLogo} />
-                    <p>DASHBOARD</p>
+                    <Icon as={IoIosCube} />
+                    <Link to='/common-dashboard' className='header__link' >DASHBOARD</Link>
                 </div>
                 <div className='header__element'>
-                    <img className='header__element' src={homieLogo} />
-                    <p>PROFILE</p>
+                    <Icon as={IoPerson} />
+                    <Link to='/profile' className='header__link' >PROFILE</Link>
                 </div>
                 <div className='header__element'>
+                    <Icon as={IoPersonCircle} />
+                    <Link to='/register' className='header__link' >SIGN UP</Link>
+                </div>
+                <div className='header__element'>
+                    <Icon as={IoKey} />
+                    <Link to='/login' className='header__link' >SIGN IN</Link>
+                </div>
+            </div>
 
-                    <p>SIGN UP</p>
-                </div>
-                <div className='header__element'>
-                    <img className='header__element' src={homieLogo} />
-                    <p>SIGN IN</p>
-                </div>
+            <div className='header__button'>
+                <Button
+                    bg='gray.700'
+                    borderRadius='30px'
+                    color='white'
+                    width='150px'
+                    fontSize='10px'
+                    fontWeight='700'
+
+                >
+                    About us
+                </Button>
             </div>
 
 

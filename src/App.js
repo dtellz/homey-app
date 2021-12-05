@@ -7,6 +7,7 @@ import PublicDashboard from './pages/public-dashboard';
 import PrivateRoute from './pages/private-route';
 import PrivateDashboard from './pages/private-dashboard'
 import Register from './pages/register';
+import PasswordReset from './pages/password-reset';
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
 
           <Route path='/login' element={<Login />}></Route>
           <Route path='/register' element={<Register />}></Route>
-          <Route path='/public-dashboard' element={<PublicDashboard />} />
+          <Route path='/password-reset' element={<PasswordReset />}></Route>
+          <Route path='/common-dashboard' element={<PrivateRoute><PublicDashboard /></PrivateRoute>} />
           <Route path='/dashboard' element={<PrivateRoute><PrivateDashboard /></PrivateRoute>} />
           <Route path='*' element={<Login />}></Route>
 

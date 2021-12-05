@@ -1,0 +1,19 @@
+.dashboard__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding-top: 2rem;
+}
+.dashboard__options{
+    display: flex;
+    flex-direction: column;
+    
+    padding-top: 2rem;
+}
+.iconBackground{
+    display: grid;
+    place-content: center;
+}
+
+

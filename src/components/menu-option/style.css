@@ -1,0 +1,14 @@
+.option{
+    display: flex;
+    gap: 1rem;
+    color: #4FD1C5;
+    cursor: pointer;
+    border-radius: 15px;
+    margin: auto;
+    align-items: center;
+
+}
+.active{
+    color:white;
+    background-color: white; 
+}

@@ -20,4 +20,15 @@
     display: flex;
     flex-direction: row;
     padding-left: 1rem;
+    align-items: center;
 }
+.homelink{
+    font-size: 20px;
+    align-items: center;
+}
+.header__link{
+    font-weight: 700;
+    font-size: 10px;
+    color: '#2D3748';
+}
+
