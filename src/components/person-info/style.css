@@ -1,0 +1,18 @@
+.personinfo__img{
+    border-radius: 12px;
+}
+.personinfo__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.personinfo__avatar-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.personinfo__align{
+    display: flex;
+    align-items:center ;
+}

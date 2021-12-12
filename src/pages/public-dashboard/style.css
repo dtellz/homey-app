@@ -32,6 +32,12 @@
     margin-right: 5px;
 
 }
+.dashboard__last-row{
+    display: flex;
+    flex-direction: row;
+    margin-top: -5rem;
+    height: max-content;
+}
 /* .dashboard__second-row{
     display: flex;
     flex-direction: row;
@@ -64,8 +70,21 @@
 .picture{
     border-radius: 12px;
     height: 240px;
-    align-self: center;
-    
+    align-self: center;   
+}
+.graph-img__box{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.graph-img{
+    margin: auto;
+    border-radius: 25px;
+    width: 600px;
 }
 .dashboard__vertical-group{
     display: flex;
@@ -90,6 +109,54 @@
     justify-content: left;
     align-content: center;
     text-align: center;
+}
+.dashboard__third-box{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+.dashboard__third-row{
+    background-color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 5px;
+    border-radius: 15px;
+    width: 50%;
+}
+.dashboard__userIcon{
+    display: grid;
+    place-content: center;
+    background-color: white;
+}
+.icon__block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.third-box__text{
+    margin-left: 1rem;
+}
+.right{
+    margin-right: 1rem;
+}
+.dashboard__new-service{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border-radius: 12px;
+    border: 1px solid #4FD1C5;
+}
+.transactions__table-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.transactions__people{
+    display: flex;
+    flex-direction: column;
 }
 
 

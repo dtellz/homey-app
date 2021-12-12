@@ -1,0 +1,17 @@
+.service-card__container{
+    background-color: white;
+    width: 25%;
+    margin: 1rem;
+    border-radius: 15px;
+}
+.service-card__img{
+    margin: 1rem;
+    border-radius: 15px;
+    width: 90%;
+}
+.service-card__text{
+    margin:1rem;
+}
+.service-card__btn{
+    margin: 1rem;
+}   
