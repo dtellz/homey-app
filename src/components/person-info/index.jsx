@@ -1,4 +1,4 @@
-import { Text, Box, Center, Divider, Grid, GridItem } from "@chakra-ui/react";
+import { Text, Box, Center, Divider, Grid, GridItem, Button } from "@chakra-ui/react";
 import './style.css'
 
 const PersonInfo = (props) => {
@@ -12,11 +12,11 @@ const PersonInfo = (props) => {
 
                 <GridItem colSpan={1}>
                     <Box className='personinfo__avatar-name'>
-                        <Center w='40px' h='40px' borderRadius='15px' margin='1rem'>
+                        <Center w='40px' h='40px' borderRadius='15px' margin='0.5rem'>
                             <img className='personinfo__img' src={props.img} />
                         </Center>
                         <Box>
-                            <Text>{props.name}</Text>
+                            <Text fontWeight='700' color='gray.700'>{props.name}</Text>
                             <Text>{props.email}</Text>
                         </Box>
 
@@ -24,7 +24,7 @@ const PersonInfo = (props) => {
                 </GridItem>
                 <GridItem colSpan={1} className="personinfo__align">
                     <Box>
-                        <Text>{props.function}</Text>
+                        <Text fontWeight='700' color='gray.700'>{props.function}</Text>
                         <Text>{props.description}</Text>
                     </Box>
                 </GridItem>
@@ -32,16 +32,16 @@ const PersonInfo = (props) => {
 
 
                 <GridItem colSpan={1} className="personinfo__align">
-                    <Text>{props.status}</Text>
+                    {props.status === 'Online' ? <Button className='personinfo__status-btn' color='white' bg='green.400'>{props.status}</Button> : <Button className='personinfo__status-btn' color='white' bg='gray.300'>{props.status}</Button>}
                 </GridItem>
 
 
                 <GridItem colSpan={1} className="personinfo__align">
-                    <Text>{props.employed}</Text>
+                    <Text fontWeight='700' color='gray.700'>{props.employed}</Text>
                 </GridItem>
 
                 <GridItem colSpan={1} className="personinfo__align">
-                    <Text>Edit</Text>
+                    <Text fontWeight='500' color='gray.700'>Edit</Text>
                 </GridItem>
 
             </Grid>

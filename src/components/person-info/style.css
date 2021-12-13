@@ -16,3 +16,7 @@
     display: flex;
     align-items:center ;
 }
+.personinfo__status-btn{
+    border-radius: 15px;
+    height: 25px;
+}
