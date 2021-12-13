@@ -1,4 +1,4 @@
-import { Grid, GridItem, Text, Icon, Box, Center } from '@chakra-ui/react'
+import { Grid, GridItem, Text, Icon, Box, Center, Button } from '@chakra-ui/react'
 import { HiHome } from "react-icons/hi";
 import { IoArrowForwardSharp } from "react-icons/io5";
 import { Divider } from '@chakra-ui/react'
@@ -20,6 +20,8 @@ import laurent from '../../assets/laurent.png'
 import freduardo from '../../assets/freduardo.png'
 import daniel from '../../assets/daniel.png'
 import mark from '../../assets/mark.png'
+import { FaFileAlt } from "react-icons/fa";
+import { useNavigate } from "react-router";
 
 const PublicDashboard = () => {
     const [optOne, setOptOne] = useState(true);
@@ -29,6 +31,13 @@ const PublicDashboard = () => {
     const [dashboard, setDashboard] = useState(true);
     const [transactions, setTransactions] = useState(false);
     const [settings, setSettings] = useState(false);
+    const actualMonth = new Date().toLocaleString('default', { month: 'long' });
+    const actualYear = new Date().getFullYear();
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/contact')
+    }
     const handleOptOne = () => {
         if (!optOne) setOptOne(true)
         if (optTwo) setOptTwo(false)
@@ -203,15 +212,125 @@ const PublicDashboard = () => {
                             </Box>
 
                         </GridItem>
-                        <GridItem rowSpan={1} colSpan={4} bg='gray.100'>
+                        <GridItem rowSpan={1} colSpan={4} bg='gray.100' className='transactions__second-row'>
+
+                            <Box bgColor='white' borderRadius='15px' width='60%' margin='1rem'>
+                                <Text fontWeight='700' color='gray.700' fontSize='18px' margin='1rem'>Billing information {actualMonth}</Text>
+
+                                <Box h='100px' bg='gray.100' borderRadius='15px' className='transactions__billing-info'>
+                                    <Box margin='1rem'>
+                                        <Text fontWeight='700' color='gray.500'>Oliver Liam</Text>
+                                        <Text fontWeight='700' color='gray.500'><span className='transactions__label'>Flat: </span>Floor 2 Flat 24</Text>
+                                        <Text fontWeight='700' color='gray.500'><span className='transactions__label'>Email Address: </span>oliver@viu.com</Text>
+                                        <Text fontWeight='700' color='gray.500'><span className='transactions__label'>VAT Number: </span>FRB1234567</Text>
+                                    </Box>
+                                    <Center margin='1rem'><Text fontWeight='700' color='gray.700'>{actualMonth}, {actualYear}</Text></Center>
+                                </Box>
+                                <Box h='100px' bg='gray.100' borderRadius='15px' className='transactions__billing-info'>
+                                    <Box margin='1rem'>
+                                        <Text fontWeight='700' color='gray.500'>Oliver Liam</Text>
+                                        <Text fontWeight='700' color='gray.500'><span className='transactions__label'>Flat: </span>Floor 2 Flat 24</Text>
+                                        <Text fontWeight='700' color='gray.500'><span className='transactions__label'>Email Address: </span>oliver@viu.com</Text>
+                                        <Text fontWeight='700' color='gray.500'><span className='transactions__label'>VAT Number: </span>FRB1234567</Text>
+                                    </Box>
+                                    <Center margin='1rem'><Text fontWeight='700' color='gray.700'>{actualMonth}, {actualYear}</Text></Center>
+                                </Box>
+                                <Box h='100px' bg='gray.100' borderRadius='15px' className='transactions__billing-info'>
+                                    <Box margin='1rem'>
+                                        <Text fontWeight='700' color='gray.500'>Oliver Liam</Text>
+                                        <Text fontWeight='700' color='gray.500'><span className='transactions__label'>Flat: </span>Floor 2 Flat 24</Text>
+                                        <Text fontWeight='700' color='gray.500'><span className='transactions__label'>Email Address: </span>oliver@viu.com</Text>
+                                        <Text fontWeight='700' color='gray.500'><span className='transactions__label'>VAT Number: </span>FRB1234567</Text>
+                                    </Box>
+                                    <Center margin='1rem'><Text fontWeight='700' color='gray.700'>{actualMonth}, {actualYear}</Text></Center>
+                                </Box>
+
+                            </Box>
+                            <Box bgColor='white' borderRadius='15px' width='40%' margin='1rem'>
+                                <Box className='transactions__header'>
+                                    <Text fontWeight='700' color='gray.700' fontSize='18px' margin='1rem'>Invoices</Text>
+
+                                    <Button w='155px' borderRadius='15px' colorScheme='teal' variant='outline'>
+                                        <Text color='teal.300' fontWeight='500'>VIEW ALL</Text>
+                                    </Button>
+                                </Box>
+                                <Box className='transactions__header'>
+                                    <Box margin='1rem'>
+                                        <Text fontWeight='700' color='gray.700' fontSize='14px'>October, 01, 2021</Text>
+                                        <Text>Garden</Text>
+                                    </Box>
 
 
+                                    <Box className='transactions__file-data'>
+                                        <Text>180$</Text>
+                                        <Icon color='black' h='14px' w='11px' as={FaFileAlt} />
+                                        <Text fontWeight='700' color='gray.500'>PDF</Text>
+                                    </Box>
+                                </Box>
+                                <Box className='transactions__header'>
+                                    <Box margin='1rem'>
+                                        <Text fontWeight='700' color='gray.700' fontSize='14px'>October, 10, 2020</Text>
+                                        <Text>Swimming pool</Text>
+                                    </Box>
+
+
+                                    <Box className='transactions__file-data'>
+                                        <Text>250$</Text>
+                                        <Icon color='black' h='14px' w='11px' as={FaFileAlt} />
+                                        <Text fontWeight='700' color='gray.500'>PDF</Text>
+                                    </Box>
+                                </Box>
+                                <Box className='transactions__header'>
+                                    <Box margin='1rem'>
+                                        <Text fontWeight='700' color='gray.700' fontSize='14px'>October, 25, 2019</Text>
+                                        <Text>Cleaning</Text>
+                                    </Box>
+
+
+                                    <Box className='transactions__file-data'>
+                                        <Text>560$</Text>
+                                        <Icon color='black' h='14px' w='11px' as={FaFileAlt} />
+                                        <Text fontWeight='700' color='gray.500'>PDF</Text>
+                                    </Box>
+                                </Box>
+                                <Box className='transactions__header'>
+                                    <Box margin='1rem'>
+                                        <Text fontWeight='700' color='gray.700' fontSize='14px'>October, 05, 2019</Text>
+                                        <Text>Conserge</Text>
+                                    </Box>
+
+
+                                    <Box className='transactions__file-data'>
+                                        <Text>120$</Text>
+                                        <Icon color='black' h='14px' w='11px' as={FaFileAlt} />
+                                        <Text fontWeight='700' color='gray.500'>PDF</Text>
+                                    </Box>
+                                </Box>
+                                <Box className='transactions__header'>
+                                    <Box margin='1rem'>
+                                        <Text fontWeight='700' color='gray.700' fontSize='14px'>October, 01, 2019</Text>
+                                        <Text>Mail services</Text>
+                                    </Box>
+
+
+                                    <Box className='transactions__file-data'>
+                                        <Text>300$</Text>
+                                        <Icon color='black' h='14px' w='11px' as={FaFileAlt} />
+                                        <Text fontWeight='700' color='gray.500'>PDF</Text>
+                                    </Box>
+                                </Box>
+                            </Box>
 
                         </GridItem>
 
                         <GridItem rowSpan={1} colSpan={4} bg='gray.100'>
 
-
+                            <Box className='transactions__issues' bgColor='teal.300' borderRadius='15px' h='200px'>
+                                <Text fontSize='32px' color='white' fontWeight='700'>Noticed an issue?</Text>
+                                <Button w='155px' borderRadius='15px' bg='white' variant='outline' onClick={handleClick}>
+                                    <Text color='gray.700' fontWeight='500'>CONTACT US</Text>
+                                </Button>
+                            </Box>
 
                         </GridItem> </> :
 
@@ -226,6 +345,8 @@ const PublicDashboard = () => {
                         </GridItem>
 
                         <GridItem className='dashboard__last-row' rowSpan={1} colSpan={4} bg='gray.100'>
+
+
 
 
 

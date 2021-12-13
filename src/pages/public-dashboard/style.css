@@ -30,6 +30,7 @@
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 5px;
+    width: 60%;
 
 }
 .dashboard__last-row{
@@ -62,6 +63,7 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-right: 1rem;
+    width: 40%;
 }
 .dashboard__picture{
     border-radius: 12px;
@@ -157,6 +159,41 @@
 .transactions__people{
     display: flex;
     flex-direction: column;
+}
+.transactions__second-row{
+    display: flex;
+    flex-direction: row;
+}
+.transactions__billing-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+    
+}
+.transactions__label{
+    color:#A0AEC0 ;
+    font-weight: 500;
+}
+.transactions__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+    align-items: center;
+}
+.transactions__file-data{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+.transactions__issues{
+    display: flex;
+    flex-direction: row;
+    margin:1rem;
+    align-items: center;
+    justify-content: space-around;
 }
 
 
