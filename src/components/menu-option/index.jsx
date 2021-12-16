@@ -2,7 +2,7 @@ import { Box, Text } from "@chakra-ui/layout"
 import { Icon } from '@chakra-ui/react'
 import { IoHome } from "react-icons/io5";
 import { CgLoadbarSound } from "react-icons/cg";
-import { AiFillTool } from "react-icons/ai";
+import { AiFillTool, AiFillFile } from "react-icons/ai";
 import './style.css'
 
 const MenuOption = (props) => {
@@ -19,12 +19,14 @@ const MenuOption = (props) => {
             icon = <Icon as={IoHome} />
             break;
         case 'bars':
-            icon = <Icon as={CgLoadbarSound} />
+            icon = <Icon w={30} h={30} as={CgLoadbarSound} />
             break;
         case 'tool':
             icon = <Icon as={AiFillTool} />
             break;
-
+        case 'file':
+            icon = <Icon as={AiFillFile} />
+            break;
         default:
             break;
     }

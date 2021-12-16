@@ -81,12 +81,13 @@
     border-radius: 15px;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 .graph-img{
-    margin: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
     border-radius: 25px;
-    width: 600px;
+    width: 100%;
 }
 .dashboard__vertical-group{
     display: flex;
