@@ -195,6 +195,13 @@
     align-items: center;
     justify-content: space-around;
 }
+.dashboard__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+}
 
 
 

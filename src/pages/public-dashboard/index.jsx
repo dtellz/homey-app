@@ -22,6 +22,7 @@ import daniel from '../../assets/daniel.png'
 import mark from '../../assets/mark.png'
 import { FaFileAlt } from "react-icons/fa";
 import { useNavigate } from "react-router";
+import DashboardHeader from '../../components/dashboard-header';
 
 const PublicDashboard = () => {
     const [optOne, setOptOne] = useState(true);
@@ -100,7 +101,11 @@ const PublicDashboard = () => {
                 <>
                     {/*  <Text>Dashboard</Text> */}
                     <GridItem rowSpan={1} colSpan={4} bg='gray.100'>
-                        <Text fontWeight={700} fontSize={14} margin='1rem' color='gray.700'>Dashboard</Text>
+                        <div className='dashboard__header'>
+                            <Text fontWeight={700} fontSize={14} margin='1rem' color='gray.700'>Dashboard</Text>
+                            <DashboardHeader />
+                        </div>
+
                         <div className='dashboard__small-info'>
                             <InfoBox textOne='House expenses' textTwo='$3,000' textThree='+55%' icon='wallet' />
                             <InfoBox textOne="Today's payments" textTwo='300' textThree='+5%' icon='world' />
@@ -186,7 +191,11 @@ const PublicDashboard = () => {
 
                         <GridItem rowSpan={1} colSpan={4} bg='gray.100'>
 
-                            <Text fontWeight={700} fontSize={14} margin='1rem' color='gray.700'>Transactions overview</Text>
+                            <div className='dashboard__header'>
+                                <Text fontWeight={700} fontSize={14} margin='1rem' color='gray.700'>Transactions overview</Text>
+                                <DashboardHeader />
+                            </div>
+
 
                             <Box bg='white' borderRadius='15px' margin='1rem'>
                                 <Text fontWeight={700} fontSize={18} color='gray.700' margin='1rem' paddingTop='1rem'>Contact house administration</Text>
@@ -337,7 +346,12 @@ const PublicDashboard = () => {
                     <>
 
                         <GridItem rowSpan={1} colSpan={4} bg='gray.100'>
-                            <Text fontWeight={700} fontSize={14} margin='1rem' color='gray.700'>Settings</Text>
+
+                            <div className='dashboard__header'>
+                                <Text fontWeight={700} fontSize={14} margin='1rem' color='gray.700'>Settings</Text>
+                                <DashboardHeader />
+                            </div>
+
                         </GridItem>
                         <GridItem rowSpan={1} colSpan={4} bg='gray.100' className='dashboard__third-box'>
 
