@@ -152,7 +152,7 @@ const PublicDashboard = () => {
                                     <Text>Users</Text>
                                 </div>
                                 <Text>2,500</Text>
-                                <Progress w='66px' h='3px' colorScheme='teal' value={60} />
+                                <Progress w='66px' h='3px' marginBottom='1rem' colorScheme='teal' value={60} />
                             </div>
 
                         </Box>
