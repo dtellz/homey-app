@@ -23,7 +23,7 @@ import mark from '../../assets/mark.png'
 import { FaFileAlt } from "react-icons/fa";
 import { useNavigate } from "react-router";
 import DashboardHeader from '../../components/dashboard-header';
-
+import SimplePerson from '../../components/simple-person';
 
 const PrivateDashboard = () => {
     const [optOne, setOptOne] = useState(true);
@@ -96,6 +96,7 @@ const PrivateDashboard = () => {
                 <HelpBox className='dashboard__helpbox' />
             </GridItem>
 
+
             {/**INIT OF CONDITIONAL RENDERED BLOCKS */}
 
             {dashboard ?
@@ -107,41 +108,16 @@ const PrivateDashboard = () => {
                             <DashboardHeader />
                         </div>
 
-                        <div className='dashboard__small-info'>
-                            <InfoBox textOne='House expenses' textTwo='$3,000' textThree='+55%' icon='wallet' />
-                            <InfoBox textOne="Today's payments" textTwo='300' textThree='+5%' icon='world' />
-                            <InfoBox textOne='Transaction to download' textTwo='24' textThree='' icon='note' />
-                            <InfoBox textOne='House administrator' textTwo='Esthera Jackson' textThree='' icon='person' />
-                        </div>
+                        <Box className='private-dash__person-block' bgColor='teal.300' borderRadius='15px' h='200px'>
 
-                        <div className='dashboard__vertical-group'>
-                            <Box className='dashboard__built-for-you'>
+                            <SimplePerson />
 
-                                <div className='dashboard__text-content'>
-                                    <Text className='text-line' fontSize='12px' fontWeight='700' color='gray.400'>Built for you</Text>
-                                    <Text className='text-line long' fontSize='18px' fontWeight='700' color='gray.700'>Homey App Dashboard</Text>
-                                    <Text className='text-line short' fontSize='12px' fontWeight='400' color='gray.400'>Control your expenses, check public areas and common resources and services for you and your neighbours</Text>
-                                    <div className='text-link' >
-                                        <Text fontWeight='700' color='black' >Read more </Text><Icon as={IoArrowForwardSharp} />
-                                    </div>
+                        </Box>
+                    </GridItem>
+                    <GridItem rowSpan={1} colSpan={4} bg='gray.100'>
 
-                                </div>
 
-                                <Box className='dashboard__built-for-you-bluecard'>
-                                    <Center h='100%' className='dashboard__name-icon'>
-                                        <Icon as={HiHome} />
-                                        <Text color='white' fontSize='20px' fontWeight='700'>Homey App</Text>
-                                    </Center>
-                                </Box>
 
-                            </Box>
-                            <Box className='dashboard__picture-box'>
-                                <Box className='dashboard__picture'>
-                                    <img className='picture' src={housesImg} />
-                                </Box>
-
-                            </Box>
-                        </div>
                     </GridItem>
                     <GridItem rowSpan={1} colSpan={4} bg='gray.100' className='dashboard__third-box'>
 
@@ -191,37 +167,20 @@ const PrivateDashboard = () => {
                     <>
 
                         <GridItem rowSpan={1} colSpan={4} bg='gray.100'>
-
                             <div className='dashboard__header'>
-                                <Text fontWeight={700} fontSize={14} margin='1rem' color='gray.700'>Transactions overview</Text>
+                                <Text fontWeight={700} fontSize={14} margin='1rem' color='gray.700'>Dashboard</Text>
                                 <DashboardHeader />
                             </div>
 
+                            <Box className='private-dash__person-block' bgColor='teal.300' borderRadius='15px' h='200px'>
 
-                            <Box bg='white' borderRadius='15px' margin='1rem'>
-                                <Text fontWeight={700} fontSize={18} color='gray.700' margin='1rem' paddingTop='1rem'>Contact house administration</Text>
-                                <Grid
-                                    templateColumns='repeat(5, 1fr)'
-                                    bg='white'
-                                    margin='1rem'>
-                                    <GridItem><Text>PERSON</Text></GridItem>
-                                    <GridItem><Text>FUNCTION</Text></GridItem>
-                                    <GridItem><Text>STATUS</Text></GridItem>
-                                    <GridItem><Text>EMPLOYED</Text></GridItem>
-                                    <GridItem></GridItem>
-                                </Grid>
-                                <Box className='transactions__people' margin='0.5rem'>
-                                    <PersonInfo name='Esthera Jackson' email='esthera@viu.com' function='House administrator' description='Services organization' status='Online' employed='14/06/21' img={esthera} />
-                                    <PersonInfo name='Alexa Liras' email='alexa@viu.com' function='Cleaning Services' description='Manager' status='Offline' employed='14/06/21' img={alexa} />
-                                    <PersonInfo name='Laurent Michael' email='laurent@viu.com' function='Floor stuff' description='Administrator' status='Online' employed='14/06/21' img={laurent} />
-                                    <PersonInfo name='Freduardo Hill' email='freduardo@viu.com' function='Gardener' description='Administrator' status='Online' employed='14/06/21' img={freduardo} />
-                                    <PersonInfo name='Daniel Thomas' email='daniel@viu.com' function='Payments and accounts' description='Administrator' status='Offline' employed='14/06/21' img={daniel} />
-                                    <PersonInfo name='Mark Wilson' email='mark@viu.com' function='Neighbours representative' description='Property owner' status='Offline' employed='14/06/21' img={mark} />
-                                </Box>
+                                <SimplePerson />
 
                             </Box>
-
                         </GridItem>
+
+
+
                         <GridItem rowSpan={1} colSpan={4} bg='gray.100' className='transactions__second-row'>
 
                             <Box bgColor='white' borderRadius='15px' width='60%' margin='1rem'>

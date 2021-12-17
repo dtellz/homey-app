@@ -1,0 +1,7 @@
+.private-dash__person-block{
+    display: flex;
+    flex-direction: column;
+    margin:1rem;
+    align-items: center;
+    justify-content: space-around;
+}
