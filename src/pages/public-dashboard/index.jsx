@@ -103,7 +103,7 @@ const PublicDashboard = () => {
                     <GridItem rowSpan={1} colSpan={4} bg='gray.100'>
                         <div className='dashboard__header'>
                             <Text fontWeight={700} fontSize={14} margin='1rem' color='gray.700'>Dashboard</Text>
-                            <DashboardHeader />
+                            <DashboardHeader type='private' />
                         </div>
 
                         <div className='dashboard__small-info'>
@@ -193,7 +193,7 @@ const PublicDashboard = () => {
 
                             <div className='dashboard__header'>
                                 <Text fontWeight={700} fontSize={14} margin='1rem' color='gray.700'>Transactions overview</Text>
-                                <DashboardHeader />
+                                <DashboardHeader type='private' />
                             </div>
 
 
@@ -349,7 +349,7 @@ const PublicDashboard = () => {
 
                             <div className='dashboard__header'>
                                 <Text fontWeight={700} fontSize={14} margin='1rem' color='gray.700'>Settings</Text>
-                                <DashboardHeader />
+                                <DashboardHeader type='private' />
                             </div>
 
                         </GridItem>

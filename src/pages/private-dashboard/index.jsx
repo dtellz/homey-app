@@ -105,7 +105,7 @@ const PrivateDashboard = () => {
                     <GridItem rowSpan={1} colSpan={4} bg='gray.100'>
                         <div className='dashboard__header'>
                             <Text fontWeight={700} fontSize={14} margin='1rem' color='gray.700'>Dashboard</Text>
-                            <DashboardHeader />
+                            <DashboardHeader type='public' />
                         </div>
 
                         <Box className='private-dash__person-block' bgColor='teal.300' borderRadius='15px' h='200px'>
@@ -114,11 +114,7 @@ const PrivateDashboard = () => {
 
                         </Box>
                     </GridItem>
-                    <GridItem rowSpan={1} colSpan={4} bg='gray.100'>
 
-
-
-                    </GridItem>
                     <GridItem rowSpan={1} colSpan={4} bg='gray.100' className='dashboard__third-box'>
 
                         <Box className='dashboard__third-row'>
@@ -169,7 +165,7 @@ const PrivateDashboard = () => {
                         <GridItem rowSpan={1} colSpan={4} bg='gray.100'>
                             <div className='dashboard__header'>
                                 <Text fontWeight={700} fontSize={14} margin='1rem' color='gray.700'>Dashboard</Text>
-                                <DashboardHeader />
+                                <DashboardHeader type='public' />
                             </div>
 
                             <Box className='private-dash__person-block' bgColor='teal.300' borderRadius='15px' h='200px'>
@@ -309,7 +305,7 @@ const PrivateDashboard = () => {
 
                             <div className='dashboard__header'>
                                 <Text fontWeight={700} fontSize={14} margin='1rem' color='gray.700'>Settings</Text>
-                                <DashboardHeader />
+                                <DashboardHeader type='public' />
                             </div>
 
                         </GridItem>
