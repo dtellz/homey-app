@@ -1,0 +1,19 @@
+.notificationbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    height: 390px;
+    width: 514px;
+    color: #4FD1C5;  
+    border-radius: 15px;
+    margin-left: 2rem;
+    margin-top: -3rem;
+
+}
+
+.notificationIcon{
+    display: grid;
+    place-content: center;
+    background-color: #2D3748;
+}

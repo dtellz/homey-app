@@ -25,6 +25,7 @@ import { useNavigate } from "react-router";
 import DashboardHeader from '../../components/dashboard-header';
 import SimplePerson from '../../components/simple-person';
 import PaymentCard from '../../components/payment-card';
+import NotificationBox from '../../components/notification-box'
 
 const PrivateDashboard = () => {
     const [optOne, setOptOne] = useState(true);
@@ -134,9 +135,9 @@ const PrivateDashboard = () => {
                         </Box>
                     </GridItem>
 
-                    <GridItem className='dashboard__last-row' rowSpan={1} colSpan={4} bg='gray.100'>
+                    <GridItem className='private-dash__last-row' rowSpan={1} colSpan={4} bg='gray.100'>
 
-
+                        <NotificationBox />
 
                     </GridItem> </> : transactions ?
 
