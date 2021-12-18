@@ -165,6 +165,8 @@ const PrivateDashboard = () => {
 
                         <GridItem rowSpan={1} colSpan={4} bg='gray.100' className='private-transactions__second-row'>
 
+                            {/* TODO: There is a paytment system which logic needs implementation. When adding items from the NewPayments component it need to be added to the Payments component in last row. Consider using context or components communication to do so.*/}
+
                             <NewPayments
                                 title='Areas'
                                 entryOne_title='Garden'
@@ -185,7 +187,7 @@ const PrivateDashboard = () => {
 
                         </GridItem>
 
-                        <GridItem rowSpan={1} colSpan={4} bg='gray.100'>
+                        <GridItem rowSpan={1} colSpan={4} bg='gray.100' className='private-transactions__last-row'>
 
                             <Payments />
 

@@ -7,7 +7,7 @@ import PublicDashboard from './pages/public-dashboard';
 import PrivateRoute from './pages/private-route';
 import PrivateDashboard from './pages/private-dashboard'
 import Register from './pages/register';
-
+import PaymentConfirmation from './pages/payment-confirmation';
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
           {/* PRIVATE ROUTES */}
           <Route path='/common-dashboard' element={<PrivateRoute><PublicDashboard /></PrivateRoute>} />
           <Route path='/dashboard' element={<PrivateRoute><PrivateDashboard /></PrivateRoute>} />
+          <Route path='/payment-confirmation' element={<PrivateRoute><PaymentConfirmation /></PrivateRoute>} />
           {/* PRIVATE ROUTES */}
           <Route path='*' element={<FormPage form='login' />}></Route>
 
