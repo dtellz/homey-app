@@ -1,0 +1,11 @@
+.payment__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.payment__icon{
+    display: grid;
+    place-content: center;
+    background-color: white;
+}

@@ -4,7 +4,7 @@ import './style.css'
 import { IoIosCube } from "react-icons/io";
 const SimplePerson = () => {
     return (
-        <Box bg='white' className="simple-person__container">
+        <Box className="simple-person__container">
             <Box className="simple-person__img-name">
                 <Center w={40} h={40} borderRadius='15px' >
                     <img className='personinfo__img' src={jessica} />

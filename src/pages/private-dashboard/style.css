@@ -5,3 +5,20 @@
     align-items: center;
     justify-content: space-around;
 }
+.private-dash__second-row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    height: 240px;
+    gap: 2rem;
+    width: 100%;
+}
+.private-dash__second-row-right{
+
+    background-color: white;
+    border-radius: 15px;
+    height: fit-content;
+    width: 50%;
+    margin-left: 1rem;
+}

@@ -24,6 +24,7 @@ import { FaFileAlt } from "react-icons/fa";
 import { useNavigate } from "react-router";
 import DashboardHeader from '../../components/dashboard-header';
 import SimplePerson from '../../components/simple-person';
+import PaymentCard from '../../components/payment-card';
 
 const PrivateDashboard = () => {
     const [optOne, setOptOne] = useState(true);
@@ -115,26 +116,12 @@ const PrivateDashboard = () => {
                         </Box>
                     </GridItem>
 
-                    <GridItem rowSpan={1} colSpan={4} bg='gray.100' className='dashboard__third-box'>
+                    <GridItem rowSpan={1} colSpan={4} bg='gray.100' className='private-dash__second-row'>
 
-                        <Box className='dashboard__third-row'>
-                            <Box className='graph-img__box'>
-                                <img className='graph-img' src={graph} />
-                            </Box>
+                        <PaymentCard icon='wallet' textOne='Pending payments (3)' textTwo='$455.00' />
+                        <PaymentCard icon='house' textOne='Common areas' textTwo='2 booked' />
 
-                            <div className='third-box__text'>
-                                <Text fontWeight='700' color='gray.700' fontSize='18px'>Amount paid by your neighbours</Text>
-                                <Text><span style={{ color: 'green', fontWeight: '500' }}>(+23) </span>than last month</Text>
-                                <div className='icon__block'>
-                                    <Box className='dashboard__userIcon' borderRadius='6px' bgColor='teal.300' w='25px' h='25px'><Icon color='white' h='10px' w='10px' as={IoWalletSharp} /></Box>
-                                    <Text>Users</Text>
-                                </div>
-                                <Text>2,500</Text>
-                                <Progress w='66px' h='3px' marginBottom='1rem' colorScheme='teal' value={60} />
-                            </div>
-
-                        </Box>
-                        <Box className='dashboard__third-row right'>
+                        <Box className='private-dash__second-row-right'>
                             <div style={{ marginLeft: '1rem', marginTop: '1rem' }}>
                                 <Text fontWeight='700' color='gray.700' fontSize='18px'>Expenses overview</Text>
                                 <Text><span style={{ color: 'green', fontWeight: '500' }}>(+5) more </span>in 2021</Text>
@@ -145,18 +132,11 @@ const PrivateDashboard = () => {
                             </Box>
 
                         </Box>
-
                     </GridItem>
 
                     <GridItem className='dashboard__last-row' rowSpan={1} colSpan={4} bg='gray.100'>
 
-                        <ServiceCard type='Area' title='Garden' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet, reiciendis' img='3' />
-                        <ServiceCard type='Service' title='Concierge' text=' labore perspiciatis obcaecati accusantium facilis voluptas ex omnis qui ' img='1' />
-                        <ServiceCard type='Service' title='Cleaning floors' text='magni eum voluptatum molestiae dolores, sit quas sunt rerum minima!' img='2' />
-                        <Center className='dashboard__new-service' w='25%'>
-                            <Icon as={IoAdd} />
-                            <Text fontWeight='700' fontSize='18px'>Request new service</Text>
-                        </Center>
+
 
                     </GridItem> </> : transactions ?
 
