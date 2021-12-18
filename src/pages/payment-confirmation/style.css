@@ -22,3 +22,26 @@
     flex-direction: row;
     gap:1rem;
 }
+.pay-confirmation__payment-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+
+}
+.pay-confirm__payment-container{
+    background-color: white;
+    margin: 1rem;
+    border-radius: 12px;
+}
+.pay-confirmation__inputs{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    gap: 1rem
+}
+.pending__container{
+    display: flex;
+    flex-direction: column;
+}

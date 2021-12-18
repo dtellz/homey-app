@@ -119,6 +119,7 @@ const PrivateDashboard = () => {
                             <SimplePerson />
 
                         </Box>
+
                     </GridItem>
 
                     <GridItem rowSpan={1} colSpan={4} bg='gray.100' className='private-dash__second-row'>
@@ -201,6 +202,12 @@ const PrivateDashboard = () => {
                                 <Text fontWeight={700} fontSize={14} margin='1rem' color='gray.700'>Settings</Text>
                                 <DashboardHeader type='public' />
                             </div>
+
+                            <Box className='private-dash__person-block' bgColor='teal.300' borderRadius='15px' h='200px'>
+
+                                <SimplePerson />
+
+                            </Box>
 
                         </GridItem>
                         <GridItem rowSpan={1} colSpan={4} bg='gray.100' className='dashboard__third-box'>
