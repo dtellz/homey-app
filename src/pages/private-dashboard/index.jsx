@@ -28,6 +28,7 @@ import PaymentCard from '../../components/payment-card';
 import NotificationBox from '../../components/notification-box'
 import RecentTransactions from '../../components/recent-transactions';
 import NewPayments from '../../components/new-payments';
+import Payments from '../../components/payments';
 
 
 const PrivateDashboard = () => {
@@ -186,7 +187,7 @@ const PrivateDashboard = () => {
 
                         <GridItem rowSpan={1} colSpan={4} bg='gray.100'>
 
-
+                            <Payments />
 
                         </GridItem> </> :
 
