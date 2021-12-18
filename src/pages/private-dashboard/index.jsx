@@ -27,6 +27,7 @@ import SimplePerson from '../../components/simple-person';
 import PaymentCard from '../../components/payment-card';
 import NotificationBox from '../../components/notification-box'
 import RecentTransactions from '../../components/recent-transactions';
+import NewPayments from '../../components/new-payments';
 
 
 const PrivateDashboard = () => {
@@ -161,9 +162,24 @@ const PrivateDashboard = () => {
 
 
 
-                        <GridItem rowSpan={1} colSpan={4} bg='gray.100' className='transactions__second-row'>
+                        <GridItem rowSpan={1} colSpan={4} bg='gray.100' className='private-transactions__second-row'>
 
-
+                            <NewPayments
+                                title='Areas'
+                                entryOne_title='Garden'
+                                entryTwo_title='Barbecue'
+                                entryThree_title='Swimming pool'
+                                entryOne_status={true}
+                                entryTwo_status={false}
+                                entryThree_status={false} />
+                            <NewPayments
+                                title='Services'
+                                entryOne_title='Garden maintenance'
+                                entryTwo_title='Cleaning service'
+                                entryThree_title='Conserge'
+                                entryOne_status={false}
+                                entryTwo_status={false}
+                                entryThree_status={true} />
 
 
                         </GridItem>

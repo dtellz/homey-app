@@ -1,4 +1,4 @@
-import { Box, Text, Icon, Center } from '@chakra-ui/react';
+import { Box, Text, Icon, Center, Button } from '@chakra-ui/react';
 import './style.css'
 import { AiOutlineArrowUp, AiOutlineArrowDown, AiOutlineExclamation } from "react-icons/ai";
 
@@ -6,6 +6,7 @@ import { AiOutlineArrowUp, AiOutlineArrowDown, AiOutlineExclamation } from "reac
 const TransactionEntry = (props) => {
     let icon = '';
     let statusStyle = {}
+    let lastElement = '';
 
     switch (props.icon) {
         case 'up':
@@ -37,6 +38,13 @@ const TransactionEntry = (props) => {
         default:
             break;
     }
+    if (props.btn !== undefined) {
+
+        props.btn ? lastElement = <Button className='payment__btn'>ADDED</Button> : lastElement = <Button className='payment__btn'>PAY</Button>
+
+    } else {
+        lastElement = <Text fontSize={14} fontWeight={700} style={statusStyle}>{props.status}</Text>;
+    }
 
 
     return (
@@ -48,7 +56,7 @@ const TransactionEntry = (props) => {
                     <Text fontSize={12} fontWeight={700} color='gray.400'>{props.date}</Text>
                 </Box>
             </Box>
-            <Text fontSize={14} fontWeight={700} style={statusStyle}>{props.status}</Text>
+            {lastElement}
         </Box>
 
 

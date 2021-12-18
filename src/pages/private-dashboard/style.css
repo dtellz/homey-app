@@ -33,3 +33,11 @@
     gap: 1rem;
 
 }
+.private-transactions__second-row{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 3.5rem;
+}
