@@ -189,7 +189,7 @@ const PrivateDashboard = () => {
 
                         <GridItem rowSpan={1} colSpan={4} bg='gray.100' className='private-transactions__last-row'>
 
-                            <Payments />
+                            <Payments btn={true} />
 
                         </GridItem> </> :
 

@@ -10,7 +10,7 @@ const NotificationBox = () => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/contact')
+        navigate('/payment-confirmation')
     }
 
     return (

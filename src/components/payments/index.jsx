@@ -4,7 +4,7 @@ import { BsBellFill } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
 
 
-const Payments = () => {
+const Payments = (props) => {
     const navigate = useNavigate();
     const handleClick = () => {
         navigate('/payment-confirmation')
@@ -41,10 +41,17 @@ const Payments = () => {
                         <Text fontSize={14} fontWeight={700} color='gray.700'>$10 Mail service</Text>
                         <Text fontSize={12} fontWeight={700} color='gray.400'>21 DEC 10:10 PM</Text>
                     </Box>
-                    <Button onClick={handleClick} className='payments__btn'>PAY ALL</Button>
+
+                    {props.btn ? <Button onClick={handleClick} w={120} color='white' borderRadius={20} bg='blue.700'>PAY ALL</Button> : <></>}
                 </Box>
 
-
+                {/*                 .payments__btn{
+    width: 120px;
+    color: white;
+    background-color: #313860;
+    border-radius: 20px;
+    margin-top: 2rem;
+} */}
             </Box>
 
 

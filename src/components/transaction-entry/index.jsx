@@ -40,7 +40,8 @@ const TransactionEntry = (props) => {
     }
     if (props.btn !== undefined) {
 
-        props.btn ? lastElement = <Button className='payment__btn'>ADDED</Button> : lastElement = <Button className='payment__btn'>PAY</Button>
+        props.btn ? lastElement = <Button w={100} color='white' borderRadius={20} bg='blue.700'>ADDED</Button> : lastElement = <Button w={100} color='white' borderRadius={20} bg='blue.700'>PAY</Button>
+
 
     } else {
         lastElement = <Text fontSize={14} fontWeight={700} style={statusStyle}>{props.status}</Text>;

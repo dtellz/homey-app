@@ -1,3 +1,24 @@
 .pay-confirm__first-row{
-    
+    margin: 1rem;
+    border-radius: 15px;
+    height: 90%;
+}
+
+.pay-confirm__billing{
+    margin: 1rem;
+}
+.pay-confirm__card-img{
+    border-radius: 25px;
+    width: 50%;
+    height: 240px;
+}
+.pay-confirm__second-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pay-confirm__second-row-right{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
 }
