@@ -26,6 +26,7 @@ import DashboardHeader from '../../components/dashboard-header';
 import SimplePerson from '../../components/simple-person';
 import PaymentCard from '../../components/payment-card';
 import NotificationBox from '../../components/notification-box'
+import RecentTransactions from '../../components/recent-transactions';
 
 const PrivateDashboard = () => {
     const [optOne, setOptOne] = useState(true);
@@ -138,6 +139,7 @@ const PrivateDashboard = () => {
                     <GridItem className='private-dash__last-row' rowSpan={1} colSpan={4} bg='gray.100'>
 
                         <NotificationBox />
+                        <RecentTransactions />
 
                     </GridItem> </> : transactions ?
 

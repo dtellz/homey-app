@@ -1,0 +1,14 @@
+.recent-transactions__container{
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 2rem;
+    margin-top: -0.5rem;
+    width: 51%;
+}
+.recent-transactions__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
