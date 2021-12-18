@@ -1,0 +1,22 @@
+.transaction-entry__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+/*     margin: 1rem; */
+
+}
+.transaction-entry__icon-box{
+    display: flex;
+    flex-direction: row;
+}
+.icon-box{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid;
+    margin-right: 1rem;
+}
