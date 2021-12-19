@@ -345,7 +345,7 @@ const PublicDashboard = () => {
 
                     <>
 
-                        <GridItem rowSpan={1} colSpan={4} bg='gray.100'>
+                        <GridItem rowSpan={1} colSpan={4} bg='gray.100' h='100vh'>
 
                             <div className='dashboard__header'>
                                 <Text fontWeight={700} fontSize={14} margin='1rem' color='gray.700'>Settings</Text>
@@ -353,18 +353,7 @@ const PublicDashboard = () => {
                             </div>
 
                         </GridItem>
-                        <GridItem rowSpan={1} colSpan={4} bg='gray.100' className='dashboard__third-box'>
-
-
-                        </GridItem>
-
-                        <GridItem className='dashboard__last-row' rowSpan={1} colSpan={4} bg='gray.100'>
-
-
-
-
-
-                        </GridItem> </>
+                    </>
             }
 
 
