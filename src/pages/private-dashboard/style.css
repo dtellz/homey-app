@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: row;
     margin-left: 3rem;
-    margin-top: -1rem;
+    margin-top: -1.5rem;
     height: 240px;
     gap: 2rem;
  
@@ -28,7 +28,7 @@
 .private-dash__last-row{
     display: flex;
     flex-direction: row;
-    margin-top: -3rem;
+    margin-top: -4rem;
     margin-left: 1rem;
     gap: 1rem;
 
@@ -43,6 +43,6 @@
 .private-transactions__last-row{
    
     margin-left: 2rem;
-    margin-right: 4rem;
+    margin-right: 49.5%;
     margin-top: 1rem;
 }

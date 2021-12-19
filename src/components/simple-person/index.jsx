@@ -2,7 +2,12 @@ import { Box, Center, Text, Button } from "@chakra-ui/react";
 import jessica from '../../assets/jessica.png'
 import './style.css'
 import { IoIosCube } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 const SimplePerson = () => {
+    const navigate = useNavigate();
+    const handlePayments = () => {
+        navigate('/payment-confirmation')
+    }
     return (
         <Box className="simple-person__container">
             <Box className="simple-person__img-name">
@@ -16,7 +21,7 @@ const SimplePerson = () => {
             </Box>
 
             <Button leftIcon={<IoIosCube />} w={134} bg='white' borderRadius='15px' variant='solid' marginRight='1rem'>
-                <Text fontWeight={700} color='gray.700' fontSize={10}>PAYMENTS</Text>
+                <Text fontWeight={700} color='gray.700' fontSize={10} onClick={handlePayments}>PAYMENTS</Text>
             </Button>
         </Box >
     )

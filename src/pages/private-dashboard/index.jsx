@@ -199,7 +199,7 @@ const PrivateDashboard = () => {
                         <GridItem rowSpan={1} colSpan={4} bg='gray.100'>
 
                             <div className='dashboard__header'>
-                                <Text fontWeight={700} fontSize={14} margin='1rem' color='gray.700'>Settings</Text>
+                                <Text fontWeight={700} fontSize={14} margin='1rem' color='gray.700'>Dashboard</Text>
                                 <DashboardHeader type='public' />
                             </div>
 
