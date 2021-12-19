@@ -46,3 +46,21 @@
     margin-right: 49.5%;
     margin-top: 1rem;
 }
+.payments-dash__second-row{
+    display: flex;
+    flex-direction: column;
+    margin-top: -17rem;
+    margin-left: 3rem;
+
+}
+.private-dash__areas{
+    background-color: white;
+    border-radius: 15px;
+    margin-right: 3rem;
+}
+.private-dash__areas-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

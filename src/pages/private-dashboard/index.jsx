@@ -210,11 +210,42 @@ const PrivateDashboard = () => {
                             </Box>
 
                         </GridItem>
-                        <GridItem rowSpan={1} colSpan={4} bg='gray.100' className='dashboard__third-box'>
+                        <GridItem rowSpan={1} colSpan={4} bg='gray.100' className='payments-dash__second-row'>
 
+                            <Text margin='1rem' fontWeight={700} fontSize={14} color='gray.700'>Available to you : 1/11 - 30/11</Text>
+                            <Box className='private-dash__areas'>
+                                <Text margin='1rem' fontWeight={700} fontSize={14} color='gray.700'>Public areas:</Text>
+                                <Text margin='1rem' fontWeight={700} fontSize={12} color='gray.400'>Manage public spaces and book</Text>
+                                <Box className='private-dash__areas-cards'>
+                                    <ServiceCard
+                                        type='Area'
+                                        title='Garden'
+                                        text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet, reiciendis'
+                                        img='3' />
+                                    <ServiceCard
+                                        type='Service'
+                                        title='Barbecue area'
+                                        text=' labore perspiciatis obcaecati accusantium facilis voluptas ex omnis qui '
+                                        img='5' />
+                                    <ServiceCard
+                                        type='Service'
+                                        title='Party space'
+                                        text='magni eum voluptatum molestiae dolores, sit quas sunt rerum minima!'
+                                        img='6' />
+                                    <ServiceCard
+                                        type='Service'
+                                        title='Playground for kids'
+                                        text=' labore perspiciatis obcaecati accusantium facilis voluptas ex omnis qui '
+                                        img='4' />
+                                    <ServiceCard
+                                        type='Area'
+                                        title='Swimming pool'
+                                        text='magni eum voluptatum molestiae dolores, sit quas sunt rerum minima!'
+                                        img='7' />
+                                </Box>
+                            </Box>
 
                         </GridItem>
-
                         <GridItem className='dashboard__last-row' rowSpan={1} colSpan={4} bg='gray.100'>
 
 

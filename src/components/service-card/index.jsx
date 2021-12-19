@@ -1,6 +1,10 @@
 import houseClerk from '../../assets/conserje.png'
 import clean from '../../assets/limpia.png'
 import garden from '../../assets/garden.png'
+import kids from '../../assets/kids.png'
+import barbecue from '../../assets/barbecue.png'
+import party from '../../assets/party.png'
+import pool from '../../assets/pool.png'
 import { Box, Text, Button } from '@chakra-ui/react'
 import './style.css'
 
@@ -17,6 +21,18 @@ const ServiceCard = (props) => {
             break;
         case '3':
             cardImage = <img className='service-card__img' src={garden} />
+            break;
+        case '4':
+            cardImage = <img className='service-card__img' src={kids} />
+            break;
+        case '5':
+            cardImage = <img className='service-card__img' src={barbecue} />
+            break;
+        case '6':
+            cardImage = <img className='service-card__img' src={party} />
+            break;
+        case '7':
+            cardImage = <img className='service-card__img' src={pool} />
             break;
 
         default:
