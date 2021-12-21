@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Homey App",
+  "name": "Homey ",
   "icons": [
     {
       "src": "favicon.ico",
